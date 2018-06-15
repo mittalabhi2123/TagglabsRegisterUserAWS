@@ -1,0 +1,27 @@
+{
+  "name": "tagglabs-print-badge",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.5.0",
+    "ajv-keywords": "^3.2.0",
+    "aws-sdk": "^2.252.1",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "reactstrap": "^6.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-and-deploy": "npm run build && s3cmd sync build/* s3://tagglabs-user-auth-portal && echo '🚀  Deployed!'"
+  },
+  "devDependencies": {
+    "react-to-print": "^1.0.19"
+  }
+}

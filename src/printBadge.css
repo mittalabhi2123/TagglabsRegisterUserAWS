@@ -1,0 +1,11 @@
+@Media Print
+{
+  img {
+    border-radius: 25px;
+  }
+  body {
+    background-color: "#306BB7";
+    background-size: 100%;
+    -webkit-print-color-adjust: exact;
+  }
+}
