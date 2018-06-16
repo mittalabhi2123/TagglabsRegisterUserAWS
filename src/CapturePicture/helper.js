@@ -21,7 +21,6 @@ export const getImageUrl = (clientName, fileName) => {
   var s3 = new AWS.S3();
   var params = {Bucket: 'tagglabs-processed', Key: clientName + '/' + fileName, Expires: 600};
   var url = s3.getSignedUrl('getObject', params);
-  console.log("get URL is:", url);
   if (url.endsWith(".com/")) {
     url = url + 'tagglabs-processed/' + clientName + '/' + fileName;
   }
